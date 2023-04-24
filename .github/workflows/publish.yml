@@ -27,6 +27,6 @@ jobs:
     - name: Upload release artifacts
       uses: Roang-zero1/github-upload-release-artifacts-action@v2
       with:
-        args: client/target/*-shaded.jar server/target/*-shaded.jar
+        args: client/target/*.jar server/target/*.jar
       env:
         GITHUB_TOKEN: ${{ github.token }}
