@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.manuelosorio.client.ClientController">
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true">
+            <TextArea fx:id="resultArea" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" />
+        </ScrollPane>
+    </center>
+   <bottom>
+        <BorderPane BorderPane.alignment="CENTER">
+            <center>
+                <TextField fx:id="numberField" />
+            </center>
+         <right>
+            <Button fx:id="submitButton" mnemonicParsing="false" text="Send Number" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <BorderPane BorderPane.alignment="CENTER">
+               <left>
+                      <Label text="Enter a number:" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+         </top>
+        </BorderPane>
+   </bottom>
+</BorderPane>

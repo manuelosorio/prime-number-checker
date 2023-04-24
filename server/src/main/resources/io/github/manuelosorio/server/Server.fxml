@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="io.github.manuelosorio.server.ServerController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10" />
+    </padding>
+    <Label fx:id="serverStatusLabel" text="Server status: Running" />
+    <Label text="Server logs:" />
+    <ScrollPane fx:id="scrollPane" fitToWidth="true" fitToHeight="true">
+        <TextArea fx:id="logArea" editable="false" prefHeight="300" wrapText="true" />
+    </ScrollPane>
+</VBox>
